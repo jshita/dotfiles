@@ -14,6 +14,7 @@ set nohidden
 set showcmd
 " :checktime でファイル再読み込み
 set autoread
+syntax on
 
 
 " 見た目系
@@ -32,9 +33,9 @@ nnoremap k gk
 
 " Tab系
 "set list listchars=tab:\▸\-
-set noexpandtab
-set tabstop=4
-set shiftwidth=4
+set expandtab
+set tabstop=2
+set shiftwidth=2
 
 
 " 検索系
@@ -49,3 +50,7 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " ctags
 nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
+
+
+" imap @html <!DOCTYPE html5><CR><TAB><head><CR><TAB></head><CR><TAB><body><CR><TAB></body><CR></html>
+imap @html <!DOCTYPE html5><CR><html><CR><head><CR><title></title><CR><meta charset='UTF-8'><CR></head><CR><body><CR></body><CR></html>
