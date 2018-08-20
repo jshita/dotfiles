@@ -9,4 +9,5 @@ alias gi="git init"
 alias gs="git status"
 alias ga="git add"
 alias gcm="git commit -m"
-
+alias gl="git log"
+alias gls="git log --stat"
